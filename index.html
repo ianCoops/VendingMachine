@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Vending Machine</title>
+</head>
+<body>
+
+    <h2>Vending Machine</h2>
+    <label>Display:</label>
+    <br>
+    <input type="text" id="display" placeholder="Insert Coins First">
+    <br>
+    <br>
+    <label>Product selected:</label>
+    <br>
+    <input type="text" id="selected" placeholder="No product selected">
+    <br>
+    <br>
+    <label>Insert coins:</label>
+    <br>
+    <button type="submit" id="penny" onclick="insertPenny()">1</button>
+    <button type="submit" id="nickel" onclick="insertNickel()">5</button>
+    <button type="submit" id="dime" onclick="insertDime()">10</button>
+    <button type="submit" id="quarter" onclick="insertQuarter()">25</button>
+    <br>
+    <br>
+    <label>Now Choose product:</label>
+    <br>
+    <button type="submit" id="cola" onclick="selectCola()">Cola</button>
+    <button type="submit" id="chips" onclick="selectChips()">Chips</button>
+    <button type="submit" id="candy" onclick="selectCandy()">Candy</button>
+    <br>
+    <br>
+    <input type="text" id="coin_return" placeholder="Coin return">
+    <button type="submit" id="take_coins"onclick="takeCoins()">Take coins</button>
+    <br>
+    <br>
+    <button type="submit" id="return_coins" onclick="cancel()">CANCEL</button>
+    <button type="submit" id="vend" onclick="vend()">VEND</button>
+    <br>
+    <br>
+    <input type="text" id="dispenser" placeholder="Dispenser">
+    <button type="submit" id="take_coins"onclick="takeProduct()">Take product</button>
+    
+</body>
+</html>
